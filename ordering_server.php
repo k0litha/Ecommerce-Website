@@ -20,7 +20,7 @@ $date = date("Y/m/d   h:i:s a");
        foreach ($_SESSION["cart"] as $keys => $value){
                 unset($_SESSION["cart"][$keys]);
                 $_SESSION['itemcount']= $_SESSION['itemcount']-1;}
-					header( "refresh:3;url=index.php" );
+					header("refresh:3;url=index.php");
 }
     
 }
