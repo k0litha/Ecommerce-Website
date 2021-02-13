@@ -1,5 +1,5 @@
  <?php
-If(isset($_POST['order']) && !isset($_SESSION['username'])){
+If(isset($_POST['order']) && isset($_SESSION['username'])){
 
 session_start();
 require 'dbconfig/config.php'; 
